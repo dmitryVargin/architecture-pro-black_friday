@@ -7,6 +7,7 @@ until mongosh --host rs-config-server/configsvr01:27017,configsvr02:27017,config
   sleep 5
 done
 
+
 # Wait for each shard's replica set to elect a primary
 for shard in 1 2 3; do
   replica_set="rs-shard-0${shard}"

@@ -7,6 +7,7 @@ mongod --shardsvr --replSet rs-shard-02 --port 27017 --bind_ip_all &
 # Store the PID of MongoDB
 MONGO_PID=$!
 
+
 # Give MongoDB some time to start initially
 sleep 5
 

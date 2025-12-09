@@ -5,6 +5,7 @@ REDIS_NODES="redis01:6379 redis02:6379 redis03:6379 redis04:6379 redis05:6379 re
 
 echo "🟡 Ожидание готовности всех узлов Redis..."
 
+
 wait_for_redis_nodes() {
     for host_port in $REDIS_NODES; do
         host=${host_port%:*}

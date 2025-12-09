@@ -17,6 +17,7 @@ check_mongo_ready() {
   return $?
 }
 
+
 # Wait for all shard servers to be ready
 wait_for_mongo() {
   echo "Waiting for MongoDB instances to start..."

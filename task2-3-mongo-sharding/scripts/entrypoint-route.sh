@@ -1,6 +1,7 @@
 #!/bin/bash
 set -euo pipefail
-  
+
+
 # Wait for the config server replica set to elect a primary
 echo "Waiting for config server replica set to elect a primary..."
 until mongosh --host rs-config-server/configsvr01:27017,configsvr02:27017,configsvr03:27017 --eval 'rs.status().members.some(m => m.stateStr === "PRIMARY")' | grep -q 'true'; do

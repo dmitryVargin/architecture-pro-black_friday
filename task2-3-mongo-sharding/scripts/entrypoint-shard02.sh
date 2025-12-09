@@ -78,6 +78,7 @@ init_shard() {
   echo "Shard replica set initialization attempted."
 }
 
+
 # Main execution
 echo "Starting MongoDB Shard entrypoint script..."
 wait_for_mongo

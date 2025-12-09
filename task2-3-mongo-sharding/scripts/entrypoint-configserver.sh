@@ -1,6 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
+
 # Start MongoDB in the background
 mongod --configsvr --replSet rs-config-server --port 27017 --bind_ip_all &
 

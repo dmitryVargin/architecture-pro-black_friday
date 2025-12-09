@@ -10,6 +10,7 @@ MONGO_PID=$!
 # Give MongoDB some time to start initially
 sleep 5
 
+
 # Function to check if MongoDB is ready locally
 check_mongo_ready() {
   host=$1
